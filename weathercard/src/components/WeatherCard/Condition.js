@@ -15,7 +15,7 @@ const Condition = ({ temp, condition }) => {
 
   return (
     <>
-      <Temp>{temp} ˚F</Temp>
+      <Temp>{temp} ˚C</Temp>
       <State>{condition}</State>
     </>
   );
