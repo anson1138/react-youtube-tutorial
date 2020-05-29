@@ -52,7 +52,7 @@ export default function NestedList() {
           </ListItemIcon>
           <ListItemText primary="Monitoring" />
         </ListItem>
-        <ListItem button>
+        <ListItem button component={Link} to="/">
           <ListItemIcon>
             <DraftsIcon />
           </ListItemIcon>
@@ -94,8 +94,8 @@ export default function NestedList() {
         </Collapse>
       </List>
       <Switch>
-        <Route exact path="/" component={Tprops} />
-        <Route path="/trops" component={Tprops} />
+        <Route exact path="/" render={() => <div>home too</div>} />
+        <Route path="/tprops" component={Tprops} />
       </Switch>
     </Router>
   );
